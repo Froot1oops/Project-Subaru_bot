@@ -1,0 +1,19 @@
+Language: Python
+Description: Bot going online and displaying a simple output message
+
+***
+#Import Discord Package
+import discord 
+
+#Client (our bot)
+client = discord.Client()
+
+#Send Message online online when bot starts
+@client.event
+async def on_ready():
+    bot_testing = client.get_channel(Insert channel ID)
+    await bot_testing.send('Insert output message')
+
+#Run the Client on the server
+client.run("Insert bot ID")
+***
